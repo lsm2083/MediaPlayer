@@ -1,0 +1,6 @@
+@WorldBeat_HostAddress = http://localhost:5217
+
+GET {{WorldBeat_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

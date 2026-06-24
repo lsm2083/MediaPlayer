@@ -10,3 +10,8 @@ obj/
 # Runtime data (로컬 영속화 파일)
 library_*.json
 download_history.json
+
+# Server runtime data
+*.db
+wwwroot/music/
+wwwroot/uploads/
