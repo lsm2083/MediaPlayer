@@ -1,0 +1,12 @@
+# Build output
+bin/
+obj/
+.vs/
+
+# User-specific
+*.user
+*.suo
+
+# Runtime data (로컬 영속화 파일)
+library_*.json
+download_history.json
