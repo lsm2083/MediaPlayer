@@ -1,16 +1,17 @@
 # MediaPlayer (WorldBeat)
 
-C# WinForms 음악 플레이어 + ASP.NET 서버로 구성된 팀 프로젝트(1차).
+C# WinForms 음악 플레이어 + ASP.NET Core 서버로 구성된 팀 프로젝트(1차).
 이 저장소는 **내가 작업한 부분**을 모은 것입니다.
 
 ```
 .
 ├─ client/   # 클라이언트(WinForms)에서 내가 구현한 기능만 발췌
-└─ server/   # 서버(ASP.NET) — 전체 내가 구현
+└─ server/   # 서버(ASP.NET Core) — 전체 내가 구현
 ```
 
 ## server/ — 서버 (전체 본인 구현)
-ASP.NET (.NET 8) REST API. SQLite + Repository/Service 계층 구조.
+ASP.NET Core (.NET 8) Web API. SQLite + Repository/Service 계층 구조.
+Minimal Hosting 모델 · Swagger(Swashbuckle) 문서화.
 - `Controllers/` — 곡/뉴스/타임캡슐 API, 관리자 API(곡 업로드·등록 등)
 - `Services/`, `Repositories/` — 비즈니스 로직 / 데이터 접근
 - `Models/`, `Contracts/` — 엔티티 / 요청·응답 DTO
@@ -33,4 +34,4 @@ ASP.NET (.NET 8) REST API. SQLite + Repository/Service 계층 구조.
 
 ## 기술 스택
 - **클라이언트**: C# / WinForms / .NET 8 · HttpClient(REST) · System.Text.Json
-- **서버**: ASP.NET (.NET 8) · SQLite · Repository/Service 패턴 · Swagger
+- **서버**: ASP.NET Core (.NET 8) Web API · SQLite · Repository/Service 패턴 · Swagger(Swashbuckle)
